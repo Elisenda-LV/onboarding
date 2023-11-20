@@ -1,6 +1,6 @@
 
 
-export interface iStep {
+export interface Istep {
   title: string;
   description: string;
   img: string;
