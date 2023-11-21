@@ -1,0 +1,25 @@
+h6{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+
+}
+
+p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 10pt;
+}
+
+.card{
+  border-radius: 7%;
+}
+
+.btn{
+  border-radius: 60%;
+}
+
+#top{
+  border-top-right-radius: 7%;
+  border-top-left-radius: 7%;
+}
+
+

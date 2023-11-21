@@ -1,8 +1,28 @@
 
-<div>
-@for (step of stepsArray ; track $index ){
-  <h3>{{ step.title }}</h3>
-  <p>{{  step.description }}</p>
-}
+<div class="row justify-content-center">
+
+  @for (step of stepsArray ; track $index ){
+
+  <div class="col-12 col-sm-4 card m-2 p-0" style="width: 16rem;">
+
+    <div [style.background-color]="step.bgcolor" style="width: auto; height: 25rem;" class="pt-5" id="top">
+      <img [src]="step.img" class="card-img-top pt-5" alt="{{ step.title }}">
+    </div>
+
+    <div class="card-body ms-0 me-0 pt-4" style="height: 15rem;">
+
+      <h6>{{ step.title }}</h6>
+      <p class="card-text text-secondary">{{  step.description }}</p>
+
+      <div class="col-12 pt-3" style="height: 6rem;">
+        <button type="submit" class="btn btn-outline-dark me-2 pt-2 pb-2"> <- </button>
+        <button type="submit" class="btn btn-dark pt-2 pb-2 ">-></button>
+      </div>
+
+    </div>
+  </div>
+
+  }
+
 </div>
 

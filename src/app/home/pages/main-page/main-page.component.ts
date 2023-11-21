@@ -20,6 +20,8 @@ export class MainPageComponent {
 
   public stepsArray : Istep [] = [];
 
-  constructor(public stepsService: StepsService ){}
+  constructor(public stepsService: StepsService ){
+
+  }
 
 }
