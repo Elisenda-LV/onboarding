@@ -1,3 +1,8 @@
+body{
+  background-color:  #F9EDDB;
+  overflow-x: hidden;
+}
+
 h6{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
@@ -21,5 +26,9 @@ p{
   border-top-right-radius: 7%;
   border-top-left-radius: 7%;
 }
+
+
+
+
 
 

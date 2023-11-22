@@ -13,15 +13,45 @@ import { Istep } from '../../interfaces/istep.interface';
   templateUrl: './escena.component.html',
   styleUrl: './escena.component.css'
 })
+
+
 export class EscenaComponent {
+
 @Input()
+
 public stepsArray: Istep [] = [{
   title: 'elisenda',
   description: 'kkkkk',
   img:'',
   bgcolor:''
 }
+
+
 ]
 
+public currentStep : number = 0;
+
+lastStep(){
+  if (this.currentStep > 0) {
+    this.currentStep--;
+  } else {
+    this.currentStep = this.stepsArray.length - 1;
+  }
+  console.log(this.currentStep);
+}
+
+nextStep() {
+  if(this.currentStep < this.stepsArray.length -1){
+    this.currentStep ++;
+  }else{
+    this.currentStep = 0
+  }
+
+  console.log(this.currentStep)
+}
+
+activeStep(){
+  this.currentStep = this.stepsArray.length
+}
 
 }
