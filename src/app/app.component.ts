@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MainPageComponent } from './home/pages/main-page/main-page.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @Component({
   selector: 'app-root',
@@ -9,7 +12,8 @@ import { MainPageComponent } from './home/pages/main-page/main-page.component';
   imports: [
     CommonModule,
     RouterOutlet,
-    MainPageComponent
+    MainPageComponent,
+
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

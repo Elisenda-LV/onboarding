@@ -6,6 +6,7 @@ import { MainPageComponent } from '../../pages/main-page/main-page.component';
 import { Istep } from '../../interfaces/istep.interface';
 import { animate, group, query, style, transition, trigger } from '@angular/animations';
 
+
 /* const left = [
   query(':enter, :leave', style({position: 'fixed', widht:'100%'}), {
     optional: true }),
@@ -36,19 +37,21 @@ const right = [
 @Component({
   selector: 'home-escena',
   standalone: true,
-  imports: [CommonModule, MainPageComponent],
+  imports: [
+    CommonModule,
+    MainPageComponent,
+
+  ],
   templateUrl: './escena.component.html',
   styleUrl: './escena.component.css',
- /*  animations: [
+  /* animations: [
     trigger('animStep', [
       transition(':increment', right),
       transition(':decrement', left),
     ])
-  ]*/
-
+  ] */
 
 })
-
 
 export class EscenaComponent {
 
